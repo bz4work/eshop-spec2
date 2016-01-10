@@ -1,17 +1,17 @@
 <html>
 <head>
-	<title>Форма оформления заказа</title>
+	<title>Р¤РѕСЂРјР° РѕС„РѕСЂРјР»РµРЅРёСЏ Р·Р°РєР°Р·Р°</title>
 </head>
 <body>
 	<form action="saveorder.php" method="post">
-		<p>Заказчик: <input type="text" name="name" size="50">
-		<p>Email заказчика: <input type="text" name="email" 
+		<p>Р—Р°РєР°Р·С‡РёРє: <input type="text" name="name" size="50">
+		<p>Email Р·Р°РєР°Р·С‡РёРєР°: <input type="text" name="email" 
 					size="50">
-		<p>Телефон для связи: <input type="text" name="phone" 
+		<p>РўРµР»РµС„РѕРЅ РґР»СЏ СЃРІСЏР·Рё: <input type="text" name="phone" 
 						size="50">
-		<p>Адрес доставки: <br><textarea name="address" 
+		<p>РђРґСЂРµСЃ РґРѕСЃС‚Р°РІРєРё: <br><textarea name="address" 
                                      cols="50" rows="5"></textarea>
-		<p><input type="submit" value="Заказать">
+		<p><input type="submit" value="Р—Р°РєР°Р·Р°С‚СЊ">
 	</form>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
-	// запуск сессии
+	// Р·Р°РїСѓСЃРє СЃРµСЃСЃРёРё
 	session_start();
-	// подключение библиотек
+	// РїРѕРґРєР»СЋС‡РµРЅРёРµ Р±РёР±Р»РёРѕС‚РµРє
 	require "eshop_db.inc.php";
 	require "eshop_lib.inc.php";
 	
@@ -13,13 +13,13 @@
 	if (isset($_GET['cus']) && isset($_GET['dt'])){
 		$customer_id = clearData ($_GET['cus'], 's');
 		$datetime_order = clearData ($_GET['dt'], 'i');
-		//orderDel($customer_id, $datetime_order) or die ('Ошибка?');
+		//orderDel($customer_id, $datetime_order) or die ('РћС€РёР±РєР°?');
 		$fl = file(ORDERS_LOG);
 		echo '<pre>';
 		echo print_r($fl,1);
 		echo '</pre><br><br>';
 		echo 'customer id: '.$customer_id.'<br>';
-		//считаем количество элементов массива
+		//СЃС‡РёС‚Р°РµРј РєРѕР»РёС‡РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°
 		$res = array_search('slava@aet.ua',$fl);	
 		echo '<pre>$res: '.$res.'</pre>';
 		unset ($fl["$res"]);
@@ -39,9 +39,9 @@
 	$key = array_search('red', $array);   // $key = 1;
 	echo $key;
 	/*
-	ЗАДАНИЕ 1
-	- Получите идентификатор удаляемого товара
-	- Вызовите функцию basketDel() для данного товара
-	- Переадресуйте пользователя на корзину заказов
+	Р—РђР”РђРќРР• 1
+	- РџРѕР»СѓС‡РёС‚Рµ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ СѓРґР°Р»СЏРµРјРѕРіРѕ С‚РѕРІР°СЂР°
+	- Р’С‹Р·РѕРІРёС‚Рµ С„СѓРЅРєС†РёСЋ basketDel() РґР»СЏ РґР°РЅРЅРѕРіРѕ С‚РѕРІР°СЂР°
+	- РџРµСЂРµР°РґСЂРµСЃСѓР№С‚Рµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РЅР° РєРѕСЂР·РёРЅСѓ Р·Р°РєР°Р·РѕРІ
 	*/
 ?>
